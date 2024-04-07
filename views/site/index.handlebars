@@ -1,0 +1,175 @@
+
+<main class="d-flex justify-content-between">
+
+    <!-- ekranın sol köşesinde bulunan profil kısmı başlangıç-->
+    {{#if displayLink}}
+
+    <div id="leftSideMenu" class="sticky-top col-2 justify-content-start text-center h-50 py-1 px-1">
+
+        <div class="d-flex flex-column justify-content-start">
+            
+            <a href="#" class="d-inline-flex align-items-center link-body-emphasis text-decoration-none">
+                <img class="image-fluid rounded-circle me-2"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1LiDcLaF8g8pMWMBQmAvwY523lTGoJNX0tw&usqp=CAU"
+                    width="50" height="50">
+            </a>
+            <h6>
+                {{#if displayLink}}
+                Melih Durmaz
+                {{/if}}
+            </h6>
+            <div class="align-items-center justify-content-center justify-content-md-between mb-5">
+                <a class="col-6 border px-1 py-1 float-start text-decoration-none" href="#">NFT'lerim <br>
+                    0
+                </a>
+                <a class="col-6 border px-1 py-1 float-end text-decoration-none" href="#">İndirimlerim
+                    0
+                </a>
+            </div>
+            <ul class="nav d-inline col-12 col-md-auto mb-2 align-items-center justify-content-center mb-0">
+                <li class="nav-link border border-1 border-primary">
+                    <a href="/" class="text-decoration-none">Ana sayfa</a>
+                </li>
+                <li class="nav-link text-dark">
+                    <a href="profile">Koleksiyonlarım</a>
+                </li>
+                <!--<li class="nav-link text-dark">
+                    <a href="settings" class="text-decoration-none">Ayalar</a>
+                </li>-->
+
+                <li class="nav-link">
+                    <a class="btn btn-outline-danger" href="/users/logout">Çıkış yap</a>
+                </li>
+
+
+            </ul>
+            
+        </div>
+
+
+
+    </div>
+    {{/if}}
+
+
+    <!-- ekranın sol köşesinde bulunan profil kısmı bitiş-->
+
+    <!--ekranın orta köşesinde bulunan akış sayfası başlangıç -->
+    {{#unless displayLink}}
+    <div>
+        <p style="color: white;">merhaba ---------------------------------------a</p>
+    </div>
+    {{/unless}}
+    <div id="mainContent"
+        class="row col-12 d-flex felx-wrap col-12 col-md-auto mb-2 align-items-start justify-content-center p-1">
+        <div class="card mb-4">
+            <img src="/image/image.jpg" class="card-img-top" alt="...">
+
+            <div class="card-body">
+                <h5 class="card-title">Kampanya</h5>
+                <p class="card-text">Koleksiyonlarını bozdurarak Uludağ'da bedava kayak keyfi çıkarabilirsin!</p>
+                <a href="collection" class="btn btn-primary">Kampanyaya git</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/image/indir (1).jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Güney Marmara görevi</h5>
+                        <p class="card-text">Bir haftada Çanakkale ve Balıkesir'de belirli yerlerde meşhur yemekleri ye
+                            Bursa'da iskender kazan!</p>
+                        <a href="#" class="btn btn-primary">Haftalık Göreve Git</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/image/indir (2).jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Van Gölü görevi</h5>
+                        <p class="card-text">Van'da kazandığın 10 nft yi bozdur Van kahvaltın bizden olsun!</p>
+                        <a href="#" class="btn btn-primary">Haftalık Göreve Git</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/image/indir.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Karadeniz görevi</h5>
+                        <p class="card-text">Trabzon ve Rize'de anlaşmalı olduğumuz yerlerden ye artvinde konaklama
+                            kazan!</p>
+                        <a href="#" class="btn btn-primary">Haftalık Göreve Git</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <!--ekranın orta köşesinde bulunan akış sayfası bitiş -->
+
+
+    <!--ekranın sağ köşesinde bulunan akış sayfası başlangıç -->
+
+    <div class="sticky-top col-2 h-50 text-center ms-1">
+        {{#if displayLink}}
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button border-1" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Koleksiyonlarım
+                    </button>
+                </h2>
+                {{#each users}}
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <ul>
+                            {{#each this.collection}} <li><strong>{{ title }}</strong></li> {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                {{/each}}
+
+
+            </div>
+            <br>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button border-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Genel Sıralama
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <img class="image-fluid rounded-circle me-2"
+                                src="/image/Ekran görüntüsü 2024-03-09 214941.png" width="50" height="50">
+                            <strong>Mustafa Demir</strong> <br> 1623 NFT
+                        </div>
+
+                        <div class="accordion-body">
+                            <img class="image-fluid rounded-circle me-2"
+                                src="/image/Ekran görüntüsü 2024-03-09 214856.png" width="50" height="50">
+                            <strong>Melisa Aydın</strong> <br> 1389 NFT
+                        </div>
+                    </div>
+
+                </div>
+                {{/if}}
+            </div>
+
+
+
+            <!--ekranın sağ köşesinde bulunan akış sayfası bitiş -->
+</main>

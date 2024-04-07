@@ -1,0 +1,39 @@
+
+    <video autoplay muted loop>
+        <source src="/video/bg-video.mp4.mp4" type="video/mp4">
+        Tarayıcınız video elementini desteklemiyor.
+    </video>
+    <div class="container-sm">
+        <div id="login" class="row mx-auto position-absolute top-50 start-50 translate-middle">
+            <div class="col-6 r-img">
+                <img src="/image/5364354.jpg" class="img-fluid py-2"  style="border-radius: 20px;"  alt="Join Us" title="Join Us" width="">
+            </div>
+            <div class="col-6">
+                <form  action="/users/register" method="POST" class="px-5 pt-5 pb-4">
+                    <h1 class="text-center text-white fw-lighter">Aramıza Katıl</h1>
+                    <div class="form-group">
+                        <span class="input-group-text">kullanıcı adınız :</span>
+                        <input type="username" name="username" aria-label="First name" class="form-control">
+                    </div>
+        
+                    <div class="form-group mt-3 mb-3">
+                        <span for="exampleInputEmail1" class="input-group-text">E-posta Adresiniz :</span>
+                        <input type="email" class="form-control" name="email"  aria-describedby="emailHelp">
+                    </div>
+        
+                    <div class="form-group mt-3 mb-3">
+                        <span for="exampleInputEmail1" class="input-group-text">Şifreniz :</span>
+                        <input type="password" class="form-control" name="password" aria-describedby="emailHelp">
+                    </div>
+                    <div class="text-center">
+                        <button id="sendRegisterButton" class="main-btn" type="submit">Register</button>
+                    </div>
+                    <br>
+                    
+                </form>
+            </div>
+         
+        </div>
+    </div>
+    
+    

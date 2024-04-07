@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#mainContent{
+    width: 65%;
+}
+#comment{
+    z-index: 99999;
+}
+.dropdown-item:active{
+    background-color: unset;
+}
+.accordion-body{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.accordion-profile{
+    padding-left: 0px;
+    padding-right: 0px; 
+    min-height: 600px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+.wallet-button {
+    background-color: transparent; /* Düğmenin arka plan rengini şeffaf yapar */
+    border: none; /* Düğmenin kenarlığını kaldırır */
+    cursor: pointer; /* Fare imlecini bir el işareti yapar */
+    border-radius: 10px; /* Kenarları kavisli yapar, değeri istediğiniz piksel boyutunda ayarlayabilirsiniz */
+}
+
+.wallet-button img {
+    width: 70px; /* İkonun genişliği */
+    height: auto; /* İkonun yüksekliğini otomatik ayarlar */
+}
+.container {
+    margin-top: 0;
+}
+body {
+    overflow-y: scroll; /* Dikey scroll çubuğunu görüntüler, içerik fazlaysa */
+    /* veya */
+    
+}
+
