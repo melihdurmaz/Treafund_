@@ -1,5 +1,5 @@
 <main class="d-flex justify-content-center justify-content-md-between">
-    <!-- ekranın sol köşesinde bulunan profil kısmı başlangıç-->
+    <!-- Profile section on the left corner of the screen start -->
     {{#if displayLink}}
 
     <div id="leftSideMenu" class="sticky-top col-2 justify-content-start text-center h-50 py-1 px-1">
@@ -7,28 +7,28 @@
         <div class="d-flex flex-column justify-content-start">
 
             <a href="#" class="d-inline-flex align-items-center link-body-emphasis text-decoration-none">
-                <img class="image-fluid rounded-circle me-2"
+                <img class="img-fluid rounded-circle me-2"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1LiDcLaF8g8pMWMBQmAvwY523lTGoJNX0tw&usqp=CAU"
                     width="50" height="50">
             </a>
             <h6>{{users.email}}</h6>
             <div class="align-items-center justify-content-center justify-content-md-between mb-5">
-                <a class="col-6 border px-1 py-1 float-start text-decoration-none" href="#">NFT'lerim</a>
-                <a class="col-6 border px-1 py-1 float-end text-decoration-none" href="#">İndirimlerim</a>
+                <a class="col-6 border px-1 py-1 float-start text-decoration-none" href="#">My NFTs</a>
+                <a class="col-6 border px-1 py-1 float-end text-decoration-none" href="#">My Discounts</a>
             </div>
             <ul class="nav d-inline col-12 col-md-auto mb-2 align-items-center justify-content-center mb-0">
                 <li class="nav-link border border-1 border-primary">
-                    <a href="/" class="text-decoration-none">Ana sayfa</a>
+                    <a href="/" class="text-decoration-none">Home</a>
                 </li>
                 <li class="nav-link text-dark">
-                    <a href="profile">Koleksiyonlarım</a>
+                    <a href="profile">My Collections</a>
                 </li>
                 <!--<li class="nav-link text-dark">
-                    <a href="settings" class="text-decoration-none">Ayalar</a>
+                    <a href="settings" class="text-decoration-none">Settings</a>
                 </li>-->
 
                 <li class="nav-link">
-                    <a class="btn btn-outline-danger" href="/users/logout">Çıkış yap</a>
+                    <a class="btn btn-outline-danger" href="/users/logout">Log out</a>
                 </li>
 
 
@@ -40,14 +40,12 @@
 
     </div>
     {{/if}}
+    <!-- Profile section on the left corner of the screen end -->
 
-
-    <!-- ekranın sol köşesinde bulunan profil kısmı bitiş-->
-
-    <!--ekranın orta köşesinde bulunan akış sayfası başlangıç -->
+    <!-- Main content section in the middle of the screen start -->
     {{#unless displayLink}}
     <div>
-        <p style="color: white;">merhaba ---------------------------------------a</p>
+        <p style="color: white;">hello ---------------------------------------a</p>
     </div>
     {{/unless}}
     <!-- ekranın sol köşesinde bulunan profil kısmı bitiş-->
@@ -60,10 +58,9 @@
                 <div class="card">
                     <img src="/image/efes.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Efes Antikkent NFT</h5>
-                        <p class="card-text">Bir haftada Çanakkale ve Balıkesir'de belirli yerlerde meşhur yemekleri ye
-                            Bursa'da iskender kazan!</p>
-                        <a href="#" class="btn btn-primary">NFT'mi incele</a>
+                        <h5 class="card-title">Ephesus Ancient City NFT</h5>
+                        <p class="card-text">Eat famous dishes in Çanakkale and Balıkesir within a week and win an iskender in Bursa!</p>
+                        <a href="#" class="btn btn-primary">Explore My NFT</a>
                     </div>
                 </div>
             </div>
@@ -71,9 +68,9 @@
                 <div class="card">
                     <img src="/image/van.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Van Gölü NFT'si</h5>
-                        <p class="card-text">Van'da kazandığın 10 nft yi bozdur Van kahvaltın bizden olsun!</p>
-                        <a href="#" class="btn btn-primary">NFT'mi incele</a>
+                        <h5 class="card-title">Van Lake NFT</h5>
+                        <p class="card-text">Redeem 10 NFTs in Van and get a free Van breakfast!</p>
+                        <a href="#" class="btn btn-primary">Explore My NFT</a>
                     </div>
                 </div>
             </div>
@@ -81,10 +78,9 @@
                 <div class="card">
                     <img src="/image/ayasofya.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Ayasofya NFT'si</h5>
-                        <p class="card-text">Trabzon ve Rize'de anlaşmalı olduğumuz yerlerden ye artvinde konaklama
-                            kazan!</p>
-                        <a href="#" class="btn btn-primary">NFT'mi incele</a>
+                        <h5 class="card-title">Hagia Sophia NFT</h5>
+                        <p class="card-text">Eat from our partner places in Trabzon and Rize and win accommodation in Artvin!</p>
+                        <a href="#" class="btn btn-primary">Explore My NFT</a>
                     </div>
                 </div>
             </div>
@@ -95,10 +91,9 @@
                 <div class="card">
                     <img src="/image/göbeklitepe.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Göbeklitepe NFT'si</h5>
-                        <p class="card-text">Bir haftada Çanakkale ve Balıkesir'de belirli yerlerde meşhur yemekleri ye
-                            Bursa'da iskender kazan!</p>
-                        <a href="#" class="btn btn-primary">NFT'mi incele</a>
+                        <h5 class="card-title">Göbeklitepe NFT</h5>
+                        <p class="card-text">Eat famous dishes in Çanakkale and Balıkesir within a week and win an iskender in Bursa!</p>
+                        <a href="#" class="btn btn-primary">Explore My NFT</a>
                     </div>
                 </div>
             </div>
@@ -106,9 +101,9 @@
                 <div class="card">
                     <img src="/image/topkapı.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Topkapı sarayı NFT</h5>
-                        <p class="card-text">Van'da kazandığın 10 nft yi bozdur Van kahvaltın bizden olsun!</p>
-                        <a href="#" class="btn btn-primary">NFT'mi incele</a>
+                        <h5 class="card-title">Topkapı Palace NFT</h5>
+                        <p class="card-text">Redeem 10 NFTs in Van and get a free Van breakfast!</p>
+                        <a href="#" class="btn btn-primary">Explore My NFT</a>
                     </div>
                 </div>
             </div>
@@ -116,10 +111,9 @@
                 <div class="card">
                     <img src="/image/sümela.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Sümela Manastırı NFT'si</h5>
-                        <p class="card-text">Trabzon ve Rize'de anlaşmalı olduğumuz yerlerden ye artvinde konaklama
-                            kazan!</p>
-                        <a href="#" class="btn btn-primary">NFT'mi incele</a>
+                        <h5 class="card-title">Sümela Monastery NFT</h5>
+                        <p class="card-text">Eat from our partner places in Trabzon and Rize and win accommodation in Artvin!</p>
+                        <a href="#" class="btn btn-primary">Explore My NFT</a>
                     </div>
                 </div>
             </div>
@@ -131,10 +125,10 @@
 
     </div>
 
-    <!--ekranın orta köşesinde bulunan akış sayfası bitiş -->
+    <!-- Main content section in the middle of the screen end -->
 
 
-    <!--ekranın sağ köşesinde bulunan akış sayfası başlangıç -->
+    <!-- Right corner content section start -->
     <div id="topRight" class="sticky-top col-2 h-50 text-center ms-1">
         {{#if displayLink}}
         <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -143,49 +137,49 @@
                     <button class="accordion-button border-1" type="button" data-bs-toggle="collapse"
                         data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                         aria-controls="panelsStayOpen-collapseOne">
-                        Koleksiyonlarım
+                        My Collections
                     </button>
                 </h2>
                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                     <div class="accordion-profile">
                         <div class="border border-1 shadow h-auto">
-                            <h6>Çanakkale koleksiyonum</h6>
+                            <h6>My Çanakkale Collection</h6>
                         </div>
                         <div class="align-items-center justify-content-center justify-content-md-between mb-5">
-                            <a href="#" class="col-6 border p-1 float-start text-decoration-none">11 NFT</a>
-                            <a href="#" class="col-6 border p-1 float-end text-decoration-none">TOPLAM 33</a>
+                            <a href="#" class="col-6 border p-1 float-start text-decoration-none">11 NFTs</a>
+                            <a href="#" class="col-6 border p-1 float-end text-decoration-none">TOTAL 33</a>
                         </div>
 
                         <div class="border border-1 shadow h-auto">
-                            <h6>Ankara koleksiyonum</h6>
+                            <h6>My Ankara Collection</h6>
                         </div>
                         <div class="align-items-center justify-content-center justify-content-md-between mb-5">
-                            <a href="#" class="col-6 border p-1 float-start text-decoration-none">24 NFT</a>
-                            <a href="#" class="col-6 border p-1 float-end text-decoration-none">TOPLAM 54</a>
+                            <a href="#" class="col-6 border p-1 float-start text-decoration-none">24 NFTs</a>
+                            <a href="#" class="col-6 border p-1 float-end text-decoration-none">TOTAL 54</a>
                         </div>
 
                         <div class="border border-1 shadow h-auto">
-                            <h6>Muğla koleksiyonum</h6>
+                            <h6>My Muğla Collection</h6>
                         </div>
                         <div class="align-items-center justify-content-center justify-content-md-between mb-5">
-                            <a href="#" class="col-6 border p-1 float-start text-decoration-none">18 NFT</a>
-                            <a href="#" class="col-6 border p-1 float-end text-decoration-none">TOPLAM 29</a>
+                            <a href="#" class="col-6 border p-1 float-start text-decoration-none">18 NFTs</a>
+                            <a href="#" class="col-6 border p-1 float-end text-decoration-none">TOTAL 29</a>
                         </div>
 
                         <div class="border border-1 shadow h-auto">
-                            <h6>Sivas koleksiyonum</h6>
+                            <h6>My Sivas Collection</h6>
                         </div>
                         <div class="align-items-center justify-content-center justify-content-md-between mb-5">
-                            <a href="#" class="col-6 border p-1 float-start text-decoration-none">0 NFT</a>
-                            <a href="#" class="col-6 border p-1 float-end text-decoration-none">TOPLAM 14</a>
+                            <a href="#" class="col-6 border p-1 float-start text-decoration-none">0 NFTs</a>
+                            <a href="#" class="col-6 border p-1 float-end text-decoration-none">TOTAL 14</a>
                         </div>
 
                         <div class="border border-1 shadow h-auto">
-                            <h6>Edirne koleksiyonum</h6>
+                            <h6>My Edirne Collection</h6>
                         </div>
                         <div class="align-items-center justify-content-center justify-content-md-between mb-5">
-                            <a href="#" class="col-6 border p-1 float-start text-decoration-none">2 NFT</a>
-                            <a href="#" class="col-6 border p-1 float-end text-decoration-none">TOPLAM 30</a>
+                            <a href="#" class="col-6 border p-1 float-start text-decoration-none">2 NFTs</a>
+                            <a href="#" class="col-6 border p-1 float-end text-decoration-none">TOTAL 30</a>
                         </div>
 
 
@@ -194,5 +188,5 @@
                 </div>
             </div>
             {{/if}}
-            <!--ekranın sağ köşesinde bulunan akış sayfası bitiş -->
+            <!-- Right corner content section end -->
 </main>
